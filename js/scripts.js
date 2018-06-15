@@ -38,18 +38,20 @@ $("#pizza-customizer").fadeIn(2000);
 console.log(veggies);
 
     $(".col-md-2").click(function() {
-      var $this = $(this).attr('class');
-console.log($this);
-      $(this).toggleClass("selected-topping");
-      $(this. img).toggleClass("select");
-      // var veggies = $(this).attr('id');
 
-      if ($this.is('.selected-topping')) {
+      var $this = $(this);
+      $(this).toggleClass("selected-topping");
+
+      if ($this.hasClass('selected-topping')) {
        veggies.push($(this).attr('id'));
+       console.log(veggies);
       } else {
-       veggies.splice[$(this).attr('id')];
+        veggies.splice($(this).attr('id'), 1 );
+        console.log(veggies);
       }
     });
+
+
 
     $("#add-to-cart").click(function() {
       var pizza = new Pizza(userName, proteins, veggies);
