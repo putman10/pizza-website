@@ -38,7 +38,6 @@ $("#pizza-customizer").fadeIn(2000);
 console.log(veggies);
 
     $(".col-md-2").click(function() {
-
       var $this = $(this);
       $(this).toggleClass("selected-topping");
 
@@ -46,7 +45,8 @@ console.log(veggies);
        veggies.push($(this).attr('id'));
        console.log(veggies);
       } else {
-        veggies.splice($(this).attr('id'), 1 );
+
+        veggies.splice(veggies.indexOf($(this).attr('id')), 1);
         console.log(veggies);
       }
     });
