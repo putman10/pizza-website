@@ -9,12 +9,11 @@ function Pizza (userName, size, proteins, veggies) {
   this.size = size;
   this.proteins = proteins;
   this.veggies = veggies;
-  this.cost = "";
 }
 
 
 Pizza.prototype.calculateCost = function() {
-  return (cost)
+  return ((((this.veggies).length) * 1) + (((this.proteins).length) * 1.50) )
 }
 
 // Create a pizza object constructor with properties for toppings and size.
@@ -28,7 +27,7 @@ Pizza.prototype.calculateCost = function() {
 // User Interface Logic
 
 $(document).ready(function() {
-$("#pizza-customizer").fadeIn(2000);
+
   $("#start-order").click(function() {
     var userName = $("input#user-name").val();
     var receipts = new Receipt(userName);
@@ -36,7 +35,7 @@ $("#pizza-customizer").fadeIn(2000);
     var veggies = [];
     $("#user-name-fields").hide();
     $("span#user-name-span").text(userName);
-    // $("#pizza-customizer").fadeIn(2000);
+    $("#pizza-customizer").fadeIn(2000);
 
 
 
@@ -67,11 +66,18 @@ $("#pizza-customizer").fadeIn(2000);
     });
 
     $("#add-to-cart").click(function() {
-      var size = "large"
+      var size = $("input#user-name").val();
       var pizza = new Pizza(userName, size, proteins, veggies);
-      console.log(proteins);
-      console.log(veggies);
+
+      $("#protein .col-md-2").removeClass("selected-topping");
+      $("#veggies .col-md-2").removeClass("selected-topping");
+      proteins = [];
+      veggies = [];
+      var cost = pizza.calculateCost();
       console.log(pizza);
+      console.log(cost);
+
+
     });
   });
 
