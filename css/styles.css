@@ -4,9 +4,13 @@ body {
 
 #header {
   color: #fff;
-  background-color: #f0ad4e;
+  background-color: #eea236;
   border-color: #eea236;
   text-align: center;
+}
+
+#header img {
+  width: 330px;
 }
 
 #main-container {
@@ -116,7 +120,6 @@ body {
 #size-selector h3 {
   margin-top: 0;
 }
-
 
 #footer {
   position: absolute;
