@@ -1,14 +1,18 @@
 // Business Logic
-
-function Pizza (userName) {
+function Reciept (userName) {
   this.name = userName;
+  // totalCost = pizza + pizza
+}
+
+function Pizza () {
   this.size = "";
   this.toppings = [];
+  this.cost = "";
 }
 
 
 Pizza.prototype.calculateCost = function() {
-  return (COST)
+  return (cost)
 }
 
 // Create a pizza object constructor with properties for toppings and size.
@@ -25,6 +29,7 @@ $(document).ready(function() {
 
   $("#start-order").click(function() {
     var userName = $("input#user-name").val();
+    var reciepts = new Reciept(userName);
     $("#user-name-fields").hide();
     $("span#user-name-span").text(userName);
     $("#pizza-customizer").fadeIn(2000);
