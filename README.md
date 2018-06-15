@@ -6,10 +6,25 @@
 
 ## Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
 
-##Allow the user to choose toppings and size for the pizza they'd like to order.
-##Create a pizza object constructor with properties for toppings and size.
-##Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
-##Keep it simple to start! You do not need to have a complex formula for determining cost (although you can if you like). The most important part of this code review is using and demonstrating your understanding of constructors and prototypes.
+1. Allow the user to choose toppings and size for the pizza they'd like to order.
+1. Create a pizza object constructor with properties for toppings and size.
+1. Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+1. Keep it simple to start! You do not need to have a complex formula for determining cost (although you can if you like). The most important part of this code review is using and demonstrating your understanding of constructors and prototypes.
+
+## Specs
+
+1. Collect user info and create receipt and pizza object with name.
+  1. Input = Ryan
+  1. Output = name:Ryan, toppings:, size
+
+1. Show/Hide and change view to allow the customization of pizza.
+
+1. User selects toppings which will visually show customized pizza components and store information in new pizza object.
+
+1. User will click add to order starting price calculations
+
+1. Website will return total cost of pizza.
+
 
 ## Setup/Contribution Requirements
 
