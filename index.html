@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -18,7 +19,33 @@
   </div>
   <div class="container" id="main-container">
     <div id="main-body">
-      <h1>Main Body Container</h1>
+      <div id="user-name-fields">
+        <div class="form-group">
+          <label for="user-name">Enter your Name to start your order:</label>
+          <input type="text" class="form-control" id="user-name">
+        </div>
+        <button type="button" class="btn btn-warning" id="start-order">Start Order</button>
+      </div>
+      <div id="pizza-customizer">
+        <h3>Welcome <span id="user-name-span"></span>, select toppings below:</h3>
+        <div id="toppings">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#protein">Protein</a></li>
+            <li><a data-toggle="pill" href="#veggies">Veggies</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="protein" class="tab-pane fade">
+              <h3>Protein</h3>
+              <p>$1.50 per topping</p>
+            </div>
+            <div id="veggies" class="tab-pane fade">
+              <h3>Veggies</h3>
+              <p>$1.00 per topping</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="results">
       <h1>Results Area For Price</h1>
