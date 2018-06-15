@@ -89,10 +89,21 @@ $(document).ready(function() {
       $(".proteins-selected").text("");
       $(".veggies-selected").text("");
       $(".price").text(cost);
-      $("#results").fadeIn();
-      $(".proteins-final").text(pizza.proteins.join(', '));
-      $(".veggies-final").text(pizza.veggies.join(', '));
 
+debugger;
+      if (pizza.proteins.length == 0 && pizza.veggies.length == 0) {
+        $(".proteins-final").text("cheese");
+      } else if (pizza.proteins.length > 0 && pizza.veggies.length == 0) {
+        $(".proteins-final").text(pizza.proteins.join(', '));
+      } else if (pizza.proteins.length == 0 && pizza.veggies.length > 0) {
+        $(".proteins-final").text("");
+        $(".veggies-final").text(pizza.veggies.join(', '));
+      } else {
+        $(".proteins-final").text(pizza.proteins.join(', ') + ", ");
+        $(".veggies-final").text(pizza.veggies.join(', '));
+      }
+
+      $("#results").fadeIn();
 
     });
   });
