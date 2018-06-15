@@ -28,16 +28,28 @@
       </div>
       <div id="pizza-customizer">
         <h3>Welcome <span id="user-name-span"></span>, select toppings below:</h3>
-        <div id="toppings">
+        <div class="size-buttons">
+          <div class="radio">
+            <label><input type="radio" name="size">Small</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="size">Medium</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="size">Large</label>
+          </div>
+        </div>
+        <div class="tab-titles">
           <ul class="nav nav-pills">
             <li class="active"><a data-toggle="pill" href="#protein">Protein</a></li>
             <li><a data-toggle="pill" href="#veggies">Veggies</a></li>
           </ul>
-
+        </div>
+        <div id="toppings">
           <div class="tab-content">
             <div id="protein" class="tab-pane fade active in">
               <h3>Protein</h3>
-              <p><em>$1.50 per topping</em></p>
+              <p>Click on picture of protein to add to your pizza: <em>$1.50 per topping</em></p>
               <div class="row">
                 <div class="col-md-2" id="bacon">
                   <img src="img/protein/bacon.png" alt="bacon">
@@ -61,7 +73,7 @@
             </div>
             <div id="veggies" class="tab-pane fade">
               <h3>Veggies</h3>
-              <p><em>$1.00 per topping</em></p>
+              <p>Click on picture of veggie to add to your pizza: <em>$1.00 per topping</em></p>
               <div class="row">
                 <div class="col-md-2" id="mushrooms">
                   <img src="img/veggies/mushrooms.png" alt="mushrooms">

@@ -29,17 +29,62 @@ body {
   display: none;
 }
 
+#toppings {
+  background: lightgoldenrodyellow;
+  padding: 10px;
+  border: 2px solid goldenrod;
+}
+
 #toppings .col-md-2 {
   padding: 5px;
   text-align: center;
 }
 
+#toppings h3 {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
 .selected-topping {
-  background: lightgoldenrodyellow;
-  border: 1px dashed black;
+  background: white;
+  border: 2px dashed black;
 }
 
 #add-to-cart {
   margin-top: 3rem;
   width: 100%;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: white;
+  border: 1px solid #eea236;
+  border-bottom: 0px;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+  background: #eea236;
+}
+
+.nav-pills>li>a {
+  border-radius: 10px 10px 0 0;
+  background: gray;
+  font-weight: 700;
+  color: white;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  border-radius: 10px 10px 0 0;
+  background: #eea236;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-pills a {
+  color: #eea236;
+}
+
+#toppings .row {
+  margin-left: 0;
+  margin-right: 0;
 }
