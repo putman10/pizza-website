@@ -1,0 +1,18 @@
+body {
+  background-image:url('../img/connectwork.png');
+}
+
+#header {
+  background: lightgoldenrodyellow;
+  text-align: center;
+}
+
+#main-container {
+  background: white;
+  padding: 20px;
+}
+
+#footer {
+  background: lightgoldenrodyellow;
+  text-align: center;
+}
