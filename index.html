@@ -27,17 +27,24 @@
         <button type="button" class="btn btn-warning" id="start-order">Start Order</button>
       </div>
       <div id="pizza-customizer">
-        <h3>Welcome <span id="user-name-span"></span>, customize your pizza below:</h3>
-        <div class="size-buttons">
-          <p>Select pizza size:</p>
-          <div class="radio">
-            <label><input type="radio" name="size" value="1">Small</label>
+        <div class="row">
+          <div class="col-md-6" id="size-selector">
+            <h3>Welcome <span id="user-name-span"></span>:</h3>
+            <div class="size-buttons">
+              <p>Select pizza size:</p>
+              <div class="radio">
+                <label><input type="radio" name="size" value="1" checked>Small</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="2">Medium</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="3">Large</label>
+              </div>
+            </div>
           </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="2">Medium</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="size" value="3">Large</label>
+          <div class="col-md-6" id="dynamic-toppings">
+            test
           </div>
         </div>
         <div class="tab-titles">
@@ -102,13 +109,13 @@
       </div>
     </div>
     <div id="results">
-      <h1>Results Area For Price</h1>
+      <h4>Your pizza will cost $<span class="price"></span></h4>
     </div>
   </div>
-  <div id="footer">
+  <!-- <div id="footer">
     <div class="container">
-      <h1>Footer Area</h1>
+      <p>Copyright 2018 Ryan Putman | Design by Ryan Putman</p>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>

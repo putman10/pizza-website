@@ -82,7 +82,7 @@ $(document).ready(function() {
       veggies = [];
       var cost = pizza.calculateCost();
 
-      $("#results h1").text(cost);
+      $(".price").text(cost);
       $("#results").fadeIn();
       console.log(size);
       console.log(pizza);

@@ -27,6 +27,7 @@ body {
 
 #results {
   display: none;
+  text-align: center;
 }
 
 #toppings {
@@ -97,6 +98,24 @@ body {
 .size-buttons {
   margin-bottom: 10px;
 }
+
 .size-buttons p{
   margin-bottom: 0;
+}
+
+#size-selector h3 {
+  margin-top: 0;
+}
+
+#dynamic-toppings {
+  background: black;
+  color: white;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
