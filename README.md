@@ -14,8 +14,8 @@
 ## Specs
 
 1. Collect user info and create receipt and pizza object with name.
-  1. Input = Ryan
-  1. Output = name:Ryan, toppings:, size
+  2. Input = Ryan
+  2. Output = name: Ryan, toppings: size
 
 1. Show/Hide and change view to allow the customization of pizza.
 
