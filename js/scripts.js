@@ -1,7 +1,6 @@
 // Business Logic
 function Receipt (userName) {
   this.name = userName;
-  // totalCost = pizza + pizza
 }
 
 function Pizza (userName, size, proteins, veggies) {
@@ -10,7 +9,6 @@ function Pizza (userName, size, proteins, veggies) {
   this.proteins = proteins;
   this.veggies = veggies;
 }
-
 
 Pizza.prototype.calculateCost = function() {
   console.log(this.size);
@@ -24,14 +22,6 @@ Pizza.prototype.calculateCost = function() {
   return
 }
 
-// Create a pizza object constructor with properties for toppings and size.
-//
-
-
-
-
-// Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
-
 // User Interface Logic
 
 $(document).ready(function() {
@@ -44,8 +34,6 @@ $(document).ready(function() {
     $("#user-name-fields").hide();
     $("span#user-name-span").text(userName);
     $("#pizza-customizer").fadeIn();
-
-
 
     $("#protein .col-md-2").click(function() {
       var $this = $(this);
@@ -90,7 +78,6 @@ $(document).ready(function() {
       $(".veggies-selected").text("");
       $(".price").text(cost);
 
-debugger;
       if (pizza.proteins.length == 0 && pizza.veggies.length == 0) {
         $(".proteins-final").text("cheese");
       } else if (pizza.proteins.length > 0 && pizza.veggies.length == 0) {
@@ -104,8 +91,6 @@ debugger;
       }
 
       $("#results").fadeIn();
-
     });
   });
-
 });
