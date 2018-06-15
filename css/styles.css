@@ -11,7 +11,7 @@ body {
 
 #main-container {
   background: white;
-  padding: 20px;
+  padding: 3rem;
 }
 
 #footer {
@@ -27,4 +27,14 @@ body {
 
 #results {
   display: none;
+}
+
+#toppings .col-md-2 {
+  padding: 5px;
+  text-align: center;
+}
+
+.selected-topping {
+  background: lightgoldenrodyellow;
+  border: 1px dashed black;
 }

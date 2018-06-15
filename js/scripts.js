@@ -29,6 +29,9 @@ $(document).ready(function() {
     $("span#user-name-span").text(userName);
     $("#pizza-customizer").fadeIn(2000);
 
-    })
+    $(".col-md-2").click(function() {
+      $(this).toggleClass("selected-topping");
+    });
+  });
 
 });
