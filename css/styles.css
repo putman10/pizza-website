@@ -30,6 +30,16 @@ body {
   text-align: center;
 }
 
+#selected-title {
+  background: black;
+  padding: 9px;
+  color: white;
+}
+
+#selected-title h4 {
+  margin:0;
+}
+
 #toppings {
   background: lightgoldenrodyellow;
   padding: 10px;
@@ -107,10 +117,6 @@ body {
   margin-top: 0;
 }
 
-#dynamic-toppings {
-  background: black;
-  color: white;
-}
 
 #footer {
   position: absolute;

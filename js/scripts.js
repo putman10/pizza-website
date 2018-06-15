@@ -53,8 +53,10 @@ $(document).ready(function() {
 
       if ($this.hasClass('selected-topping')) {
        proteins.push($(this).attr('id'));
+       $(".proteins-selected").html("Proteins: " + proteins + "<br>");
       } else {
         proteins.splice(proteins.indexOf($(this).attr('id')), 1);
+        $(".proteins-selected").html("Proteins: " + proteins + "<br>");
       }
 
       return proteins
@@ -66,8 +68,10 @@ $(document).ready(function() {
 
       if ($this.hasClass('selected-topping')) {
        veggies.push($(this).attr('id'));
+       $(".veggies-selected").html("Veggies: " + veggies + "<br>");
       } else {
         veggies.splice(veggies.indexOf($(this).attr('id')), 1);
+        $(".veggies-selected").html("Veggies: " + veggies + "<br>");
       }
 
       return veggies
@@ -82,6 +86,8 @@ $(document).ready(function() {
       veggies = [];
       var cost = pizza.calculateCost();
 
+      $(".proteins-selected").text("");
+      $(".veggies-selected").text("");
       $(".price").text(cost);
       $("#results").fadeIn();
       console.log(size);
