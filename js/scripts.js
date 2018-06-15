@@ -43,7 +43,7 @@ $(document).ready(function() {
     var veggies = [];
     $("#user-name-fields").hide();
     $("span#user-name-span").text(userName);
-    $("#pizza-customizer").fadeIn(2000);
+    $("#pizza-customizer").fadeIn();
 
 
 
