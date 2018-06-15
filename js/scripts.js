@@ -53,10 +53,10 @@ $(document).ready(function() {
 
       if ($this.hasClass('selected-topping')) {
        proteins.push($(this).attr('id'));
-       $(".proteins-selected").html("Proteins: " + proteins + "<br>");
+       $(".proteins-selected").html("<b>Proteins:</b>  " + proteins.join(', ') + "<br>");
       } else {
         proteins.splice(proteins.indexOf($(this).attr('id')), 1);
-        $(".proteins-selected").html("Proteins: " + proteins + "<br>");
+        $(".proteins-selected").html("<b>Proteins:</b> " + proteins.join(', ') + "<br>");
       }
 
       return proteins
@@ -68,10 +68,10 @@ $(document).ready(function() {
 
       if ($this.hasClass('selected-topping')) {
        veggies.push($(this).attr('id'));
-       $(".veggies-selected").html("Veggies: " + veggies + "<br>");
+       $(".veggies-selected").html("<b>Veggies:</b>  " + veggies.join(', ') + "<br>");
       } else {
         veggies.splice(veggies.indexOf($(this).attr('id')), 1);
-        $(".veggies-selected").html("Veggies: " + veggies + "<br>");
+        $(".veggies-selected").html("<b>Veggies:</b>  " + veggies.join(', ') + "<br>");
       }
 
       return veggies
@@ -90,9 +90,8 @@ $(document).ready(function() {
       $(".veggies-selected").text("");
       $(".price").text(cost);
       $("#results").fadeIn();
-      console.log(size);
-      console.log(pizza);
-      console.log(cost);
+      $(".proteins-final").text(pizza.proteins.join(', '));
+      $(".veggies-final").text(pizza.veggies.join(', '));
 
 
     });
