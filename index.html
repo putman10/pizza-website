@@ -27,16 +27,17 @@
         <button type="button" class="btn btn-warning" id="start-order">Start Order</button>
       </div>
       <div id="pizza-customizer">
-        <h3>Welcome <span id="user-name-span"></span>, select toppings below:</h3>
+        <h3>Welcome <span id="user-name-span"></span>, customize your pizza below:</h3>
         <div class="size-buttons">
+          <p>Select pizza size:</p>
           <div class="radio">
-            <label><input type="radio" name="size">Small</label>
+            <label><input type="radio" name="size" value="1">Small</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="size">Medium</label>
+            <label><input type="radio" name="size" value="2">Medium</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="size">Large</label>
+            <label><input type="radio" name="size" value="3">Large</label>
           </div>
         </div>
         <div class="tab-titles">
@@ -49,7 +50,7 @@
           <div class="tab-content">
             <div id="protein" class="tab-pane fade active in">
               <h3>Protein</h3>
-              <p>Click on picture of protein to add to your pizza: <em>$1.50 per topping</em></p>
+              <p>Click on picture of protein to add to your pizza: <em>$1.50 per protein</em></p>
               <div class="row">
                 <div class="col-md-2" id="bacon">
                   <img src="img/protein/bacon.png" alt="bacon">
@@ -73,7 +74,7 @@
             </div>
             <div id="veggies" class="tab-pane fade">
               <h3>Veggies</h3>
-              <p>Click on picture of veggie to add to your pizza: <em>$1.00 per topping</em></p>
+              <p>Click on picture of veggie to add to your pizza: <em>$1.00 per veggie</em></p>
               <div class="row">
                 <div class="col-md-2" id="mushrooms">
                   <img src="img/veggies/mushrooms.png" alt="mushrooms">

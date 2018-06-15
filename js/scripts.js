@@ -13,7 +13,15 @@ function Pizza (userName, size, proteins, veggies) {
 
 
 Pizza.prototype.calculateCost = function() {
-  return ((((this.veggies).length) * 1) + (((this.proteins).length) * 1.50) + 15 )
+  console.log(this.size);
+  if (this.size === "1") {
+    return (((this.veggies).length) * 1) + (((this.proteins).length) * 1.50) + 15;
+  } else if (this.size === "2") {
+    return(((this.veggies).length) * 1) + (((this.proteins).length) * 1.50) + 17;
+  } else {
+    return(((this.veggies).length) * 1) + (((this.proteins).length) * 1.50) + 20;
+  }
+  return
 }
 
 // Create a pizza object constructor with properties for toppings and size.
@@ -68,7 +76,6 @@ $(document).ready(function() {
     $("#add-to-cart").click(function() {
       var size = $('input[name="size"]:checked').val();
       var pizza = new Pizza(userName, size, proteins, veggies);
-
       $("#protein .col-md-2").removeClass("selected-topping");
       $("#veggies .col-md-2").removeClass("selected-topping");
       proteins = [];
@@ -77,6 +84,7 @@ $(document).ready(function() {
 
       $("#results h1").text(cost);
       $("#results").fadeIn();
+      console.log(size);
       console.log(pizza);
       console.log(cost);
 

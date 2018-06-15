@@ -88,3 +88,15 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
+
+.radio {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.size-buttons {
+  margin-bottom: 10px;
+}
+.size-buttons p{
+  margin-bottom: 0;
+}
