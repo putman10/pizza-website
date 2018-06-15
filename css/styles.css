@@ -38,3 +38,8 @@ body {
   background: lightgoldenrodyellow;
   border: 1px dashed black;
 }
+
+#add-to-cart {
+  margin-top: 3rem;
+  width: 100%;
+}
